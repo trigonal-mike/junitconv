@@ -1,0 +1,500 @@
+{
+  "timestamp": "2024-02-21 15:28:16.311090",
+  "type": "python",
+  "version": "1.0",
+  "name": "Python Test suite",
+  "description": "Checks variables",
+  "status": "COMPLETED",
+  "result": "FAILED",
+  "resultMessage": "Some or all tests failed",
+  "duration": 1.8010921478271484,
+  "executionDuration": 0.4409370422363281,
+  "environment": {
+    "Python": "3.10.11",
+    "Platform": "Windows-10-10.0.19045-SP0",
+    "Packages": {
+      "pytest": "7.4.3",
+      "pluggy": "1.3.0"
+    },
+    "Plugins": {
+      "metadata": "3.0.0"
+    }
+  },
+  "properties": {
+    "test": "i:\\PYTHON\\catester\\catester\\../examples/ex1/test1.yaml",
+    "specification": ""
+  },
+  "debug": {
+    "executionDurationStudent": 0.4409370422363281,
+    "executionDurationReference": 0.29367780685424805
+  },
+  "exitcode": "ExitCode.TESTS_FAILED",
+  "summary": {
+    "total": 6,
+    "success": 1,
+    "failed": 4,
+    "skipped": 1
+  },
+  "tests": [
+    {
+      "type": "variable",
+      "name": "Test Basic",
+      "status": "COMPLETED",
+      "result": "SKIPPED",
+      "resultMessage": "Tests skipped",
+      "debug": {
+        "executionDurationStudent": 0.015685319900512695,
+        "executionDurationReference": 0.01581430435180664,
+        "traceback": {},
+        "lintingErrors": []
+      },
+      "duration": 0.9268207550048828,
+      "executionDuration": 0.015685319900512695,
+      "summary": {
+        "total": 8,
+        "success": 3,
+        "failed": 3,
+        "skipped": 2
+      },
+      "tests": [
+        {
+          "name": "var1",
+          "result": "PASSED",
+          "debug": {
+            "timestamp": 1708525697.2420774
+          }
+        },
+        {
+          "name": "var2",
+          "result": "SKIPPED",
+          "resultMessage": "Test skipped",
+          "debug": {
+            "longrepr": [
+              "i:\\PYTHON\\catester\\catester\\tests\\test_class.py",
+              291,
+              "Skipped: Evaluation of `jhunok` not possible"
+            ],
+            "timestamp": 1708525697.2460644
+          }
+        },
+        {
+          "name": "var3",
+          "result": "SKIPPED",
+          "resultMessage": "Test skipped",
+          "debug": {
+            "longrepr": [
+              "i:\\PYTHON\\catester\\catester\\tests\\test_class.py",
+              299,
+              "Skipped: Variable `var3` not found in reference namespace"
+            ],
+            "timestamp": 1708525697.248059
+          }
+        },
+        {
+          "name": "var4",
+          "result": "FAILED",
+          "debug": {
+            "longrepr": "E   KeyError: 'Variable `var4` not found in student namespace'",
+            "timestamp": 1708525697.2510507
+          }
+        },
+        {
+          "name": "var5",
+          "result": "FAILED",
+          "debug": {
+            "longrepr": "E   AssertionError: Variable `var5` has incorrect type, expected: <class 'tuple'>, obtained <class 'list'>\n    assert <class 'list'> == <class 'tuple'>",
+            "timestamp": 1708525697.2530456
+          }
+        },
+        {
+          "name": "var6",
+          "result": "FAILED",
+          "debug": {
+            "longrepr": "E   AssertionError: Variable `var6` has incorrect len, expected: 2, obtained 3\n    assert 3 == 2",
+            "timestamp": 1708525697.2562325
+          }
+        },
+        {
+          "name": "var7",
+          "result": "PASSED",
+          "debug": {
+            "timestamp": 1708525697.257831
+          }
+        },
+        {
+          "name": "var8",
+          "result": "PASSED",
+          "debug": {
+            "timestamp": 1708525697.2598262
+          }
+        }
+      ]
+    },
+    {
+      "type": "variable",
+      "name": "Test PythonTypes",
+      "status": "COMPLETED",
+      "result": "PASSED",
+      "debug": {
+        "executionDurationStudent": 0.01116323471069336,
+        "executionDurationReference": 0.014800310134887695,
+        "traceback": {},
+        "lintingErrors": []
+      },
+      "duration": 0.06888842582702637,
+      "executionDuration": 0.01116323471069336,
+      "summary": {
+        "total": 15,
+        "success": 15,
+        "failed": 0,
+        "skipped": 0
+      },
+      "tests": [
+        {
+          "name": "x1",
+          "result": "PASSED",
+          "debug": {
+            "timestamp": 1708525697.287275
+          }
+        },
+        {
+          "name": "x2",
+          "result": "PASSED",
+          "debug": {
+            "timestamp": 1708525697.2892716
+          }
+        },
+        {
+          "name": "x3",
+          "result": "PASSED",
+          "debug": {
+            "timestamp": 1708525697.2922611
+          }
+        },
+        {
+          "name": "x4",
+          "result": "PASSED",
+          "debug": {
+            "timestamp": 1708525697.2942762
+          }
+        },
+        {
+          "name": "x5",
+          "result": "PASSED",
+          "debug": {
+            "timestamp": 1708525697.2952745
+          }
+        },
+        {
+          "name": "x6",
+          "result": "PASSED",
+          "debug": {
+            "timestamp": 1708525697.2974956
+          }
+        },
+        {
+          "name": "x7",
+          "result": "PASSED",
+          "debug": {
+            "timestamp": 1708525697.3005154
+          }
+        },
+        {
+          "name": "x8",
+          "result": "PASSED",
+          "debug": {
+            "timestamp": 1708525697.3044786
+          }
+        },
+        {
+          "name": "x9",
+          "result": "PASSED",
+          "debug": {
+            "timestamp": 1708525697.3074694
+          }
+        },
+        {
+          "name": "x10",
+          "result": "PASSED",
+          "debug": {
+            "timestamp": 1708525697.3104627
+          }
+        },
+        {
+          "name": "x11",
+          "result": "PASSED",
+          "debug": {
+            "timestamp": 1708525697.3144832
+          }
+        },
+        {
+          "name": "x12",
+          "result": "PASSED",
+          "debug": {
+            "timestamp": 1708525697.3174784
+          }
+        },
+        {
+          "name": "x13",
+          "result": "PASSED",
+          "debug": {
+            "timestamp": 1708525697.3217068
+          }
+        },
+        {
+          "name": "x14",
+          "result": "PASSED",
+          "debug": {
+            "timestamp": 1708525697.325696
+          }
+        },
+        {
+          "name": "x15",
+          "result": "PASSED",
+          "debug": {
+            "timestamp": 1708525697.3287146
+          }
+        }
+      ]
+    },
+    {
+      "type": "variable",
+      "name": "Test DateTime",
+      "status": "COMPLETED",
+      "result": "FAILED",
+      "debug": {
+        "executionDurationStudent": 0.003991127014160156,
+        "executionDurationReference": 0.015706300735473633,
+        "traceback": {},
+        "lintingErrors": []
+      },
+      "duration": 0.031751394271850586,
+      "executionDuration": 0.003991127014160156,
+      "summary": {
+        "total": 4,
+        "success": 1,
+        "failed": 3,
+        "skipped": 0
+      },
+      "tests": [
+        {
+          "name": "var_date",
+          "result": "PASSED",
+          "debug": {
+            "timestamp": 1708525697.3499627
+          }
+        },
+        {
+          "name": "var_time",
+          "result": "FAILED",
+          "debug": {
+            "longrepr": "E   AssertionError: Variable `var_time` has incorrect value (`15:28:17.3...` instead of `15:28:17.3...`)\n    assert datetime.time...8, 17, 330695) == 15:28:17.334278\n      comparison failed\n      Obtained: 15:28:17.330695\n      Expected: 15:28:17.334278",
+            "timestamp": 1708525697.3534653
+          }
+        },
+        {
+          "name": "var_datetime",
+          "result": "FAILED",
+          "debug": {
+            "longrepr": "E   AssertionError: Variable `var_datetime` has incorrect value (`2024-02-21...` instead of `2024-02-21...`)\n    assert datetime.date...8, 17, 330695) == 2024-02-21 15:28:17.334278\n      comparison failed\n      Obtained: 2024-02-21 15:28:17.330695\n      Expected: 2024-02-21 15:28:17.334278",
+            "timestamp": 1708525697.356457
+          }
+        },
+        {
+          "name": "var_duration",
+          "result": "FAILED",
+          "debug": {
+            "longrepr": "E   AssertionError: Variable `var_duration` has incorrect value (`5 days, 3:...` instead of `5 days, 3:...`)\n    assert datetime.time...croseconds=10) == 5 days, 3:00:00\n      comparison failed\n      Obtained: 5 days, 3:00:00.000010\n      Expected: 5 days, 3:00:00",
+            "timestamp": 1708525697.360466
+          }
+        }
+      ]
+    },
+    {
+      "type": "variable",
+      "name": "Test Matplot",
+      "status": "COMPLETED",
+      "result": "FAILED",
+      "debug": {
+        "executionDurationStudent": 0.3716928958892822,
+        "executionDurationReference": 0.2332770824432373,
+        "traceback": {},
+        "lintingErrors": []
+      },
+      "duration": 0.6681468486785889,
+      "executionDuration": 0.3716928958892822,
+      "summary": {
+        "total": 2,
+        "success": 1,
+        "failed": 1,
+        "skipped": 0
+      },
+      "tests": [
+        {
+          "name": "x",
+          "result": "PASSED",
+          "debug": {
+            "timestamp": 1708525698.0180528
+          }
+        },
+        {
+          "name": "y",
+          "result": "FAILED",
+          "debug": {
+            "longrepr": "E   AssertionError: \n    Not equal to tolerance rtol=1e-08, atol=1e-05\n    \n    Mismatched elements: 100 / 100 (100%)\n    Max absolute difference: 0.0001\n    Max relative difference: 0.00972825\n     x: array([ 1.000000e-04,  1.009384e-01,  2.007489e-01,  2.985138e-01,\n            3.932366e-01,  4.839516e-01,  5.697341e-01,  6.497095e-01,\n            7.230626e-01,  7.890455e-01,  8.469856e-01,  8.962922e-01,...\n     y: array([ 0.      ,  0.100838,  0.200649,  0.298414,  0.393137,  0.483852,\n            0.569634,  0.64961 ,  0.722963,  0.788945,  0.846886,  0.896192,\n            0.936363,  0.966988,  0.987755,  0.998452,  0.998971,  0.989306,...\n\nDuring handling of the above exception, another exception occurred:\nE   AssertionError: Variable `y` has incorrect value (`[ 1.000000...` instead of `[ 0.      ...`)",
+            "timestamp": 1708525698.0286129
+          }
+        }
+      ]
+    },
+    {
+      "type": "variable",
+      "name": "Test Pandas",
+      "status": "COMPLETED",
+      "result": "FAILED",
+      "debug": {
+        "executionDurationStudent": 0.028496980667114258,
+        "executionDurationReference": 0.014079809188842773,
+        "traceback": {},
+        "lintingErrors": []
+      },
+      "duration": 0.06438565254211426,
+      "executionDuration": 0.028496980667114258,
+      "summary": {
+        "total": 2,
+        "success": 1,
+        "failed": 1,
+        "skipped": 0
+      },
+      "tests": [
+        {
+          "name": "df",
+          "result": "FAILED",
+          "debug": {
+            "longrepr": "E   AssertionError: Variable `df` has incorrect value (`   Column1...` instead of `   Column1...`)\n    assert False\n     +  where False = <bound method NDFrame.equals of    Column1 Column2  Column3\\n0        1       a     True\\n1        2       B    False\\n2        3       C     True>(   Column1 Column2  Column3\\n0        1       A     True\\n1        2       B    False\\n2        3       C     True)\n     +    where <bound method NDFrame.equals of    Column1 Column2  Column3\\n0        1       a     True\\n1        2       B    False\\n2        3       C     True> =    Column1 Column2  Column3\\n0        1       a     True\\n1        2       B    False\\n2        3       C     True.equals",
+            "timestamp": 1708525698.0916364
+          }
+        },
+        {
+          "name": "ser",
+          "result": "PASSED",
+          "debug": {
+            "timestamp": 1708525698.0929985
+          }
+        }
+      ]
+    },
+    {
+      "type": "variable",
+      "name": "Test Strings",
+      "status": "COMPLETED",
+      "result": "FAILED",
+      "debug": {
+        "executionDurationStudent": 0.00990748405456543,
+        "executionDurationReference": 0,
+        "traceback": {},
+        "lintingErrors": []
+      },
+      "duration": 0.03762054443359375,
+      "executionDuration": 0.00990748405456543,
+      "summary": {
+        "total": 12,
+        "success": 6,
+        "failed": 6,
+        "skipped": 0
+      },
+      "tests": [
+        {
+          "name": "var1",
+          "result": "PASSED",
+          "debug": {
+            "timestamp": 1708525698.1057067
+          }
+        },
+        {
+          "name": "var1",
+          "result": "PASSED",
+          "debug": {
+            "timestamp": 1708525698.1086972
+          }
+        },
+        {
+          "name": "var1",
+          "result": "PASSED",
+          "debug": {
+            "timestamp": 1708525698.1096942
+          }
+        },
+        {
+          "name": "var1",
+          "result": "PASSED",
+          "debug": {
+            "timestamp": 1708525698.1116889
+          }
+        },
+        {
+          "name": "var1",
+          "result": "PASSED",
+          "debug": {
+            "timestamp": 1708525698.1134143
+          }
+        },
+        {
+          "name": "var1",
+          "result": "PASSED",
+          "debug": {
+            "timestamp": 1708525698.1144114
+          }
+        },
+        {
+          "name": "var2",
+          "result": "FAILED",
+          "debug": {
+            "longrepr": "E   AssertionError: Variable `var2` does not match the specified pattern `-`\n    assert '_x1234567890' == '-'\n      - -\n      + _x1234567890",
+            "timestamp": 1708525698.1174026
+          }
+        },
+        {
+          "name": "var2",
+          "result": "FAILED",
+          "debug": {
+            "longrepr": "E   AssertionError: Variable `var2` does not contain the specified pattern `-`\n    assert -1 > -1\n     +  where -1 = <built-in method find of str object at 0x000002040EBE0730>('-')\n     +    where <built-in method find of str object at 0x000002040EBE0730> = '_x1234567890'.find\n     +      where '_x1234567890' = str('_x1234567890')",
+            "timestamp": 1708525698.1210456
+          }
+        },
+        {
+          "name": "var2",
+          "result": "FAILED",
+          "debug": {
+            "longrepr": "E   AssertionError: Variable `var2` does not start with the specified pattern `-`\n    assert False\n     +  where False = <built-in method startswith of str object at 0x000002040EBE0730>('-')\n     +    where <built-in method startswith of str object at 0x000002040EBE0730> = '_x1234567890'.startswith\n     +      where '_x1234567890' = str('_x1234567890')",
+            "timestamp": 1708525698.1230705
+          }
+        },
+        {
+          "name": "var2",
+          "result": "FAILED",
+          "debug": {
+            "longrepr": "E   AssertionError: Variable `var2` does not end with the specified pattern `-`\n    assert False\n     +  where False = <built-in method endswith of str object at 0x000002040EBE0730>('-')\n     +    where <built-in method endswith of str object at 0x000002040EBE0730> = '_x1234567890'.endswith\n     +      where '_x1234567890' = str('_x1234567890')",
+            "timestamp": 1708525698.1262035
+          }
+        },
+        {
+          "name": "var2",
+          "result": "FAILED",
+          "debug": {
+            "longrepr": "E   AssertionError: Variable `var2` does not contain the specified pattern `-` 1-times\n    assert 0 == 1\n     +  where 0 = <built-in method count of str object at 0x000002040EBE0730>('-')\n     +    where <built-in method count of str object at 0x000002040EBE0730> = '_x1234567890'.count\n     +      where '_x1234567890' = str('_x1234567890')",
+            "timestamp": 1708525698.1286244
+          }
+        },
+        {
+          "name": "var2",
+          "result": "FAILED",
+          "debug": {
+            "longrepr": "E   AssertionError: Variable `var2` does not match the compiled regular expression from the specified pattern `^.*y.*$`\n    assert None is not None",
+            "timestamp": 1708525698.130619
+          }
+        }
+      ]
+    }
+  ]
+}
