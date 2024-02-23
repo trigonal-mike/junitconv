@@ -26,7 +26,7 @@ def convert_now(input_file: str, output_file: str):
     test_suites = dict_to_testsuites(data)
     xml = to_xml_report_string(test_suites, prettyprint=pretty_print)
     print(f"Writing: {output_file}")
-    with open(output_file, "w") as file:
+    with open(output_file, "w", encoding="UTF-8") as file:
         file.write(xml)
 
 def dict_to_testsuites(data: dict) -> list[TestSuite]:
