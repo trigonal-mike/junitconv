@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="2" failures="0" tests="4" time="0.0">
+	<testsuite disabled="0" errors="2" failures="0" name="graphics" skipped="0" tests="4" time="0">
+		<testcase name="figure(1).axes[0].lines[0]._linestyle" classname="graphics">
+			<error type="error" message="FAILED">E   AssertionError: Variable `figure(1).axes[0].lines[0]._linestyle` has incorrect value (`-.` instead of `--`)
+    assert '-.' == '--'
+      - --
+      + -.</error>
+		</testcase>
+		<testcase name="figure(1).axes[0].lines[0].get_linestyle()" classname="graphics">
+			<error type="error" message="FAILED">E   AssertionError: Variable `figure(1).axes[0].lines[0].get_linestyle()` has incorrect value (`-.` instead of `--`)
+    assert '-.' == '--'
+      - --
+      + -.</error>
+		</testcase>
+		<testcase name="figure(1).axes[0].get_xlabel()" classname="graphics"/>
+		<testcase name="figure(2).axes[0].get_ylabel()" classname="graphics"/>
+	</testsuite>
+</testsuites>
