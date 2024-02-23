@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <testsuites disabled="0" errors="1" failures="0" tests="8" time="0.0">
 	<testsuite disabled="0" errors="1" failures="0" name="Checks existence of file testScript1.m" skipped="0" tests="1" time="0">
-		<testcase name="existence" class="exist">
+		<testcase name="existence" classname="exist">
 			<error type="error" message="Not available"/>
 		</testcase>
 	</testsuite>

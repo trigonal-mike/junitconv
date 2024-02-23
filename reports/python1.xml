@@ -6,39 +6,39 @@
 		</testcase>
 	</testsuite>
 	<testsuite disabled="0" errors="0" failures="0" name="Test PythonTypes" skipped="0" tests="15" time="0">
-		<testcase name="x1" class="variable"/>
-		<testcase name="x2" class="variable"/>
-		<testcase name="x3" class="variable"/>
-		<testcase name="x4" class="variable"/>
-		<testcase name="x5" class="variable"/>
-		<testcase name="x6" class="variable"/>
-		<testcase name="x7" class="variable"/>
-		<testcase name="x8" class="variable"/>
-		<testcase name="x9" class="variable"/>
-		<testcase name="x10" class="variable"/>
-		<testcase name="x11" class="variable"/>
-		<testcase name="x12" class="variable"/>
-		<testcase name="x13" class="variable"/>
-		<testcase name="x14" class="variable"/>
-		<testcase name="x15" class="variable"/>
+		<testcase name="x1" classname="variable"/>
+		<testcase name="x2" classname="variable"/>
+		<testcase name="x3" classname="variable"/>
+		<testcase name="x4" classname="variable"/>
+		<testcase name="x5" classname="variable"/>
+		<testcase name="x6" classname="variable"/>
+		<testcase name="x7" classname="variable"/>
+		<testcase name="x8" classname="variable"/>
+		<testcase name="x9" classname="variable"/>
+		<testcase name="x10" classname="variable"/>
+		<testcase name="x11" classname="variable"/>
+		<testcase name="x12" classname="variable"/>
+		<testcase name="x13" classname="variable"/>
+		<testcase name="x14" classname="variable"/>
+		<testcase name="x15" classname="variable"/>
 	</testsuite>
 	<testsuite disabled="0" errors="3" failures="0" name="Test DateTime" skipped="0" tests="4" time="0">
-		<testcase name="var_date" class="variable"/>
-		<testcase name="var_time" class="variable">
+		<testcase name="var_date" classname="variable"/>
+		<testcase name="var_time" classname="variable">
 			<error type="error" message="E   AssertionError: Variable `var_time` has incorrect value (`15:28:17.3...` instead of `15:28:17.3...`)
     assert datetime.time...8, 17, 330695) == 15:28:17.334278
       comparison failed
       Obtained: 15:28:17.330695
       Expected: 15:28:17.334278"/>
 		</testcase>
-		<testcase name="var_datetime" class="variable">
+		<testcase name="var_datetime" classname="variable">
 			<error type="error" message="E   AssertionError: Variable `var_datetime` has incorrect value (`2024-02-21...` instead of `2024-02-21...`)
     assert datetime.date...8, 17, 330695) == 2024-02-21 15:28:17.334278
       comparison failed
       Obtained: 2024-02-21 15:28:17.330695
       Expected: 2024-02-21 15:28:17.334278"/>
 		</testcase>
-		<testcase name="var_duration" class="variable">
+		<testcase name="var_duration" classname="variable">
 			<error type="error" message="E   AssertionError: Variable `var_duration` has incorrect value (`5 days, 3:...` instead of `5 days, 3:...`)
     assert datetime.time...croseconds=10) == 5 days, 3:00:00
       comparison failed
@@ -47,8 +47,8 @@
 		</testcase>
 	</testsuite>
 	<testsuite disabled="0" errors="1" failures="0" name="Test Matplot" skipped="0" tests="2" time="0">
-		<testcase name="x" class="variable"/>
-		<testcase name="y" class="variable">
+		<testcase name="x" classname="variable"/>
+		<testcase name="y" classname="variable">
 			<error type="error" message="E   AssertionError: 
     Not equal to tolerance rtol=1e-08, atol=1e-05
     
@@ -67,56 +67,56 @@ E   AssertionError: Variable `y` has incorrect value (`[ 1.000000...` instead of
 		</testcase>
 	</testsuite>
 	<testsuite disabled="0" errors="1" failures="0" name="Test Pandas" skipped="0" tests="2" time="0">
-		<testcase name="df" class="variable">
+		<testcase name="df" classname="variable">
 			<error type="error" message="E   AssertionError: Variable `df` has incorrect value (`   Column1...` instead of `   Column1...`)
     assert False
      +  where False = &lt;bound method NDFrame.equals of    Column1 Column2  Column3\n0        1       a     True\n1        2       B    False\n2        3       C     True&gt;(   Column1 Column2  Column3\n0        1       A     True\n1        2       B    False\n2        3       C     True)
      +    where &lt;bound method NDFrame.equals of    Column1 Column2  Column3\n0        1       a     True\n1        2       B    False\n2        3       C     True&gt; =    Column1 Column2  Column3\n0        1       a     True\n1        2       B    False\n2        3       C     True.equals"/>
 		</testcase>
-		<testcase name="ser" class="variable"/>
+		<testcase name="ser" classname="variable"/>
 	</testsuite>
 	<testsuite disabled="0" errors="6" failures="0" name="Test Strings" skipped="0" tests="12" time="0">
-		<testcase name="var1" class="variable"/>
-		<testcase name="var1" class="variable"/>
-		<testcase name="var1" class="variable"/>
-		<testcase name="var1" class="variable"/>
-		<testcase name="var1" class="variable"/>
-		<testcase name="var1" class="variable"/>
-		<testcase name="var2" class="variable">
+		<testcase name="var1" classname="variable"/>
+		<testcase name="var1" classname="variable"/>
+		<testcase name="var1" classname="variable"/>
+		<testcase name="var1" classname="variable"/>
+		<testcase name="var1" classname="variable"/>
+		<testcase name="var1" classname="variable"/>
+		<testcase name="var2" classname="variable">
 			<error type="error" message="E   AssertionError: Variable `var2` does not match the specified pattern `-`
     assert '_x1234567890' == '-'
       - -
       + _x1234567890"/>
 		</testcase>
-		<testcase name="var2" class="variable">
+		<testcase name="var2" classname="variable">
 			<error type="error" message="E   AssertionError: Variable `var2` does not contain the specified pattern `-`
     assert -1 &gt; -1
      +  where -1 = &lt;built-in method find of str object at 0x000002040EBE0730&gt;('-')
      +    where &lt;built-in method find of str object at 0x000002040EBE0730&gt; = '_x1234567890'.find
      +      where '_x1234567890' = str('_x1234567890')"/>
 		</testcase>
-		<testcase name="var2" class="variable">
+		<testcase name="var2" classname="variable">
 			<error type="error" message="E   AssertionError: Variable `var2` does not start with the specified pattern `-`
     assert False
      +  where False = &lt;built-in method startswith of str object at 0x000002040EBE0730&gt;('-')
      +    where &lt;built-in method startswith of str object at 0x000002040EBE0730&gt; = '_x1234567890'.startswith
      +      where '_x1234567890' = str('_x1234567890')"/>
 		</testcase>
-		<testcase name="var2" class="variable">
+		<testcase name="var2" classname="variable">
 			<error type="error" message="E   AssertionError: Variable `var2` does not end with the specified pattern `-`
     assert False
      +  where False = &lt;built-in method endswith of str object at 0x000002040EBE0730&gt;('-')
      +    where &lt;built-in method endswith of str object at 0x000002040EBE0730&gt; = '_x1234567890'.endswith
      +      where '_x1234567890' = str('_x1234567890')"/>
 		</testcase>
-		<testcase name="var2" class="variable">
+		<testcase name="var2" classname="variable">
 			<error type="error" message="E   AssertionError: Variable `var2` does not contain the specified pattern `-` 1-times
     assert 0 == 1
      +  where 0 = &lt;built-in method count of str object at 0x000002040EBE0730&gt;('-')
      +    where &lt;built-in method count of str object at 0x000002040EBE0730&gt; = '_x1234567890'.count
      +      where '_x1234567890' = str('_x1234567890')"/>
 		</testcase>
-		<testcase name="var2" class="variable">
+		<testcase name="var2" classname="variable">
 			<error type="error" message="E   AssertionError: Variable `var2` does not match the compiled regular expression from the specified pattern `^.*y.*$`
     assert None is not None"/>
 		</testcase>

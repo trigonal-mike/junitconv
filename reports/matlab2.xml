@@ -1,45 +1,45 @@
 <?xml version="1.0" ?>
 <testsuites disabled="0" errors="0" failures="0" tests="26" time="0.0">
 	<testsuite disabled="0" errors="0" failures="0" name="Checks existence of file testScript1.m" skipped="0" tests="1" time="0">
-		<testcase name="existence" class="exist"/>
+		<testcase name="existence" classname="exist"/>
 	</testsuite>
 	<testsuite disabled="0" errors="0" failures="0" name="Setup of an array" skipped="0" tests="2" time="0">
-		<testcase name="num" class="variable"/>
-		<testcase name="M" class="variable"/>
+		<testcase name="num" classname="variable"/>
+		<testcase name="M" classname="variable"/>
 	</testsuite>
 	<testsuite disabled="0" errors="0" failures="0" name="Extract scalars" skipped="0" tests="3" time="0">
-		<testcase name="s_1" class="variable"/>
-		<testcase name="s_2" class="variable"/>
-		<testcase name="s_3" class="variable"/>
+		<testcase name="s_1" classname="variable"/>
+		<testcase name="s_2" classname="variable"/>
+		<testcase name="s_3" classname="variable"/>
 	</testsuite>
 	<testsuite disabled="0" errors="0" failures="0" name="Extract column vectors" skipped="0" tests="5" time="0">
-		<testcase name="c_1" class="variable"/>
-		<testcase name="c_2" class="variable"/>
-		<testcase name="c_3" class="variable"/>
-		<testcase name="c_4" class="variable"/>
-		<testcase name="c_5" class="variable"/>
+		<testcase name="c_1" classname="variable"/>
+		<testcase name="c_2" classname="variable"/>
+		<testcase name="c_3" classname="variable"/>
+		<testcase name="c_4" classname="variable"/>
+		<testcase name="c_5" classname="variable"/>
 	</testsuite>
 	<testsuite disabled="0" errors="0" failures="0" name="Extract row vectors" skipped="0" tests="5" time="0">
-		<testcase name="r_1" class="variable"/>
-		<testcase name="r_2" class="variable"/>
-		<testcase name="r_3" class="variable"/>
-		<testcase name="r_4" class="variable"/>
-		<testcase name="r_5" class="variable"/>
+		<testcase name="r_1" classname="variable"/>
+		<testcase name="r_2" classname="variable"/>
+		<testcase name="r_3" classname="variable"/>
+		<testcase name="r_4" classname="variable"/>
+		<testcase name="r_5" classname="variable"/>
 	</testsuite>
 	<testsuite disabled="0" errors="0" failures="0" name="Extract non-singular arrays" skipped="0" tests="5" time="0">
-		<testcase name="m_1" class="variable"/>
-		<testcase name="m_2" class="variable"/>
-		<testcase name="m_3" class="variable"/>
-		<testcase name="m_4" class="variable"/>
-		<testcase name="m_5" class="variable"/>
+		<testcase name="m_1" classname="variable"/>
+		<testcase name="m_2" classname="variable"/>
+		<testcase name="m_3" classname="variable"/>
+		<testcase name="m_4" classname="variable"/>
+		<testcase name="m_5" classname="variable"/>
 	</testsuite>
 	<testsuite disabled="0" errors="0" failures="0" name="Structural test" skipped="0" tests="1" time="0">
-		<testcase name="num" class="structural"/>
+		<testcase name="num" classname="structural"/>
 	</testsuite>
 	<testsuite disabled="0" errors="0" failures="0" name="Linting test" skipped="0" tests="4" time="0">
-		<testcase name="NOPTS" class="linting"/>
-		<testcase name="NOPRT" class="linting"/>
-		<testcase name="NOSEMI" class="linting"/>
-		<testcase name="NOCOMMA" class="linting"/>
+		<testcase name="NOPTS" classname="linting"/>
+		<testcase name="NOPRT" classname="linting"/>
+		<testcase name="NOSEMI" classname="linting"/>
+		<testcase name="NOCOMMA" classname="linting"/>
 	</testsuite>
 </testsuites>

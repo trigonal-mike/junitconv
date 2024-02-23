@@ -1,14 +1,14 @@
 <?xml version="1.0" ?>
 <testsuites disabled="0" errors="2" failures="0" tests="12" time="0.0">
 	<testsuite disabled="0" errors="0" failures="0" name="Checks existence of file testScript1.m" skipped="0" tests="1" time="0">
-		<testcase name="existence" class="exist"/>
+		<testcase name="existence" classname="exist"/>
 	</testsuite>
 	<testsuite disabled="0" errors="2" failures="0" name="Setup of an array" skipped="0" tests="2" time="0">
-		<testcase name="num" class="variable">
+		<testcase name="num" classname="variable">
 			<error type="error" message="num can not be evaluated:
 Unrecognized field name &quot;num&quot;."/>
 		</testcase>
-		<testcase name="M" class="variable">
+		<testcase name="M" classname="variable">
 			<error type="error" message="M can not be evaluated:
 Unrecognized field name &quot;M&quot;."/>
 		</testcase>
@@ -34,12 +34,12 @@ Unrecognized field name &quot;M&quot;."/>
 		</testcase>
 	</testsuite>
 	<testsuite disabled="0" errors="0" failures="0" name="Structural test" skipped="0" tests="1" time="0">
-		<testcase name="num" class="structural"/>
+		<testcase name="num" classname="structural"/>
 	</testsuite>
 	<testsuite disabled="0" errors="0" failures="0" name="Linting test" skipped="0" tests="4" time="0">
-		<testcase name="NOPTS" class="linting"/>
-		<testcase name="NOPRT" class="linting"/>
-		<testcase name="NOSEMI" class="linting"/>
-		<testcase name="NOCOMMA" class="linting"/>
+		<testcase name="NOPTS" classname="linting"/>
+		<testcase name="NOPRT" classname="linting"/>
+		<testcase name="NOSEMI" classname="linting"/>
+		<testcase name="NOCOMMA" classname="linting"/>
 	</testsuite>
 </testsuites>

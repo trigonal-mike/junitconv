@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <testsuites disabled="0" errors="1" failures="0" tests="1" time="0.0">
 	<testsuite disabled="0" errors="1" failures="0" name="linting" skipped="0" tests="1" time="0">
-		<testcase name="var1" class="linting">
+		<testcase name="var1" classname="linting">
 			<error type="error" message="E   SyntaxError: 11 Syntax Errors in file `.` (see: i:\PYTHON\catester\examples\ex2\output\linting-var1-linting.txt)"/>
 		</testcase>
 	</testsuite>

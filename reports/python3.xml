@@ -1,9 +1,9 @@
 <?xml version="1.0" ?>
 <testsuites disabled="0" errors="1" failures="0" tests="5" time="0.0">
 	<testsuite disabled="0" errors="1" failures="0" name="Testcollection 1" skipped="0" tests="3" time="0">
-		<testcase name="var1" class="variable"/>
-		<testcase name="var2" class="variable"/>
-		<testcase name="var3" class="variable">
+		<testcase name="var1" classname="variable"/>
+		<testcase name="var2" classname="variable"/>
+		<testcase name="var3" classname="variable">
 			<error type="error" message="E   AssertionError: Variable `var3` has incorrect value (`3` instead of `3333`)
     assert 3 == 3333 ± 3.3e-12
       comparison failed
@@ -17,6 +17,6 @@
 		</testcase>
 	</testsuite>
 	<testsuite disabled="0" errors="0" failures="0" name="Testcollection 3" skipped="0" tests="1" time="0">
-		<testcase name="var3" class="variable"/>
+		<testcase name="var3" classname="variable"/>
 	</testsuite>
 </testsuites>
