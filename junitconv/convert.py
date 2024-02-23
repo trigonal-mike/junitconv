@@ -59,7 +59,7 @@ def dict_to_testsuites(data: dict) -> list[TestSuite]:
                 sub_name = subtest["name"]
                 sub_result = subtest["result"]
                 tc = TestCase(sub_name)
-                tc.category = type
+                tc.classname = type
                 if sub_result == "FAILED":
                     tc.add_error_info(get_error_info(subtest))
                 test_cases.append(tc)
