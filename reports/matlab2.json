@@ -1,0 +1,272 @@
+{
+    "type": "MATLAB",
+    "version": "2.0",
+    "timeStamp": "2024-01-30 05:26:08",
+    "name": "Slicing of arrays with help of indices",
+    "description": "CodeAbility TestSuite",
+    "result": "PASSED",
+    "summary": {
+      "total": 8,
+      "succeeded": 8,
+      "failed": 0,
+      "skipped": 0
+    },
+    "resultMessage": "Congratulations! All tests passed",
+    "duration": 1.631637623,
+    "environment": {
+      "version": "23.2.0.2391609 (R2023b) Update 2",
+      "computer": "MACI64"
+    },
+    "tests": [
+      {
+        "type": "exist",
+        "name": "Checks existence of file testScript1.m",
+        "result": "PASSED",
+        "summary": {
+          "total": 1,
+          "succeeded": 1,
+          "failed": 0,
+          "skipped": 0
+        },
+        "duration": 0.016639464,
+        "tests": [
+          {
+            "type": "exist",
+            "name": "existence",
+            "result": "PASSED",
+            "resultMessage": "File testScript1.msuccessfully found"
+          }
+        ]
+      },
+      {
+        "type": "variable",
+        "name": "Setup of an array",
+        "result": "PASSED",
+        "summary": {
+          "total": 2,
+          "succeeded": 2,
+          "failed": 0,
+          "skipped": 0
+        },
+        "duration": 0.573191699,
+        "executionDuration": 0.026280155,
+        "tests": [
+          {
+            "type": "variable",
+            "name": "num",
+            "result": "PASSED"
+          },
+          {
+            "type": "variable",
+            "name": "M",
+            "result": "PASSED"
+          }
+        ]
+      },
+      {
+        "type": "variable",
+        "name": "Extract scalars",
+        "result": "PASSED",
+        "summary": {
+          "total": 3,
+          "succeeded": 3,
+          "failed": 0,
+          "skipped": 0
+        },
+        "duration": 0.035163806,
+        "tests": [
+          {
+            "type": "variable",
+            "name": "s_1",
+            "result": "PASSED"
+          },
+          {
+            "type": "variable",
+            "name": "s_2",
+            "result": "PASSED"
+          },
+          {
+            "type": "variable",
+            "name": "s_3",
+            "result": "PASSED"
+          }
+        ]
+      },
+      {
+        "type": "variable",
+        "name": "Extract column vectors",
+        "result": "PASSED",
+        "summary": {
+          "total": 5,
+          "succeeded": 5,
+          "failed": 0,
+          "skipped": 0
+        },
+        "duration": 0.027327912,
+        "tests": [
+          {
+            "type": "variable",
+            "name": "c_1",
+            "result": "PASSED"
+          },
+          {
+            "type": "variable",
+            "name": "c_2",
+            "result": "PASSED"
+          },
+          {
+            "type": "variable",
+            "name": "c_3",
+            "result": "PASSED"
+          },
+          {
+            "type": "variable",
+            "name": "c_4",
+            "result": "PASSED"
+          },
+          {
+            "type": "variable",
+            "name": "c_5",
+            "result": "PASSED"
+          }
+        ]
+      },
+      {
+        "type": "variable",
+        "name": "Extract row vectors",
+        "result": "PASSED",
+        "summary": {
+          "total": 5,
+          "succeeded": 5,
+          "failed": 0,
+          "skipped": 0
+        },
+        "duration": 0.021178589999999997,
+        "tests": [
+          {
+            "type": "variable",
+            "name": "r_1",
+            "result": "PASSED"
+          },
+          {
+            "type": "variable",
+            "name": "r_2",
+            "result": "PASSED"
+          },
+          {
+            "type": "variable",
+            "name": "r_3",
+            "result": "PASSED"
+          },
+          {
+            "type": "variable",
+            "name": "r_4",
+            "result": "PASSED"
+          },
+          {
+            "type": "variable",
+            "name": "r_5",
+            "result": "PASSED"
+          }
+        ]
+      },
+      {
+        "type": "variable",
+        "name": "Extract non-singular arrays",
+        "result": "PASSED",
+        "summary": {
+          "total": 5,
+          "succeeded": 5,
+          "failed": 0,
+          "skipped": 0
+        },
+        "duration": 0.006321212,
+        "tests": [
+          {
+            "type": "variable",
+            "name": "m_1",
+            "result": "PASSED"
+          },
+          {
+            "type": "variable",
+            "name": "m_2",
+            "result": "PASSED"
+          },
+          {
+            "type": "variable",
+            "name": "m_3",
+            "result": "PASSED"
+          },
+          {
+            "type": "variable",
+            "name": "m_4",
+            "result": "PASSED"
+          },
+          {
+            "type": "variable",
+            "name": "m_5",
+            "result": "PASSED"
+          }
+        ]
+      },
+      {
+        "type": "structural",
+        "name": "Structural test",
+        "result": "PASSED",
+        "summary": {
+          "total": 1,
+          "succeeded": 1,
+          "failed": 0,
+          "skipped": 0
+        },
+        "resultMessage": "File: testScript1.m\nAll requirements are fulfilled",
+        "duration": 0.013828110999999999,
+        "tests": [
+          {
+            "type": "structural",
+            "name": "num",
+            "result": "PASSED",
+            "resultMessage": "Number of occurancies of num equal to 2 is within range [2 2]"
+          }
+        ]
+      },
+      {
+        "type": "linting",
+        "name": "Linting test",
+        "result": "PASSED",
+        "summary": {
+          "total": 4,
+          "succeeded": 4,
+          "failed": 0,
+          "skipped": 0
+        },
+        "duration": 0.551627968,
+        "tests": [
+          {
+            "type": "linting",
+            "name": "NOPTS",
+            "result": "PASSED",
+            "resultMessage": "Number of occurancies of NOPTS equal to 0 is within range [0 0]\nMeaning of NOPTS is not available "
+          },
+          {
+            "type": "linting",
+            "name": "NOPRT",
+            "result": "PASSED",
+            "resultMessage": "Number of occurancies of NOPRT equal to 0 is within range [0 0]\nMeaning of NOPRT is not available "
+          },
+          {
+            "type": "linting",
+            "name": "NOSEMI",
+            "result": "PASSED",
+            "resultMessage": "Number of occurancies of NOSEMI equal to 0 is within range [0 0]\nMeaning of NOSEMI is not available "
+          },
+          {
+            "type": "linting",
+            "name": "NOCOMMA",
+            "result": "PASSED",
+            "resultMessage": "Number of occurancies of NOCOMMA equal to 0 is within range [0 0]\nMeaning of NOCOMMA is not available "
+          }
+        ]
+      }
+    ]
+  }

@@ -1,0 +1,167 @@
+{
+  "timestamp": "2024-02-23 13:20:08.238889",
+  "type": "python",
+  "version": "1.0",
+  "name": "Python Test Suite",
+  "description": "Checks subtests and graphics",
+  "status": "COMPLETED",
+  "result": "FAILED",
+  "resultMessage": "Some or all tests failed",
+  "duration": 0.9691789150238037,
+  "executionDuration": 0.0,
+  "environment": {
+    "Python": "3.10.11",
+    "Platform": "Windows-10-10.0.19045-SP0",
+    "Packages": {
+      "pytest": "7.4.3",
+      "pluggy": "1.3.0"
+    },
+    "Plugins": {
+      "metadata": "3.0.0"
+    }
+  },
+  "properties": {
+    "test": "i:\\PYTHON\\catester\\catester\\../examples/ex3/test.yaml",
+    "specification": ""
+  },
+  "debug": {
+    "executionDurationStudent": 0.0,
+    "executionDurationReference": 0.0
+  },
+  "exitcode": "ExitCode.TESTS_FAILED",
+  "summary": {
+    "total": 3,
+    "success": 1,
+    "failed": 1,
+    "skipped": 1
+  },
+  "tests": [
+    {
+      "type": "variable",
+      "name": "Testcollection 1",
+      "setup": [
+        "var1 = 1",
+        "var2 = 2",
+        "var3 = 3"
+      ],
+      "status": "COMPLETED",
+      "result": "FAILED",
+      "debug": {
+        "executionDurationStudent": 0,
+        "executionDurationReference": 0,
+        "traceback": {},
+        "lintingErrors": []
+      },
+      "duration": 0.9611988067626953,
+      "executionDuration": 0,
+      "summary": {
+        "total": 3,
+        "success": 2,
+        "failed": 1,
+        "skipped": 0
+      },
+      "tests": [
+        {
+          "name": "var1",
+          "result": "PASSED",
+          "debug": {
+            "timestamp": 1708690809.2080724
+          }
+        },
+        {
+          "name": "var2",
+          "result": "PASSED",
+          "debug": {
+            "timestamp": 1708690809.210067
+          }
+        },
+        {
+          "name": "var3",
+          "result": "FAILED",
+          "debug": {
+            "longrepr": "E   AssertionError: Variable `var3` has incorrect value (`3` instead of `3333`)\n    assert 3 == 3333 \u00b1 3.3e-12\n      comparison failed\n      Obtained: 3\n      Expected: 3333 \u00b1 3.3e-12",
+            "timestamp": 1708690809.2130587
+          }
+        }
+      ]
+    },
+    {
+      "type": "variable",
+      "name": "Testcollection 2",
+      "status": "SKIPPED",
+      "result": "SKIPPED",
+      "resultMessage": "Tests skipped",
+      "debug": {
+        "executionDurationStudent": 0,
+        "executionDurationReference": 0,
+        "traceback": {},
+        "lintingErrors": []
+      },
+      "duration": 0.0029921531677246094,
+      "executionDuration": 0,
+      "summary": {
+        "total": 2,
+        "success": 0,
+        "failed": 0,
+        "skipped": 2
+      },
+      "tests": [
+        {
+          "name": "var2",
+          "result": "SKIPPED",
+          "resultMessage": "Test skipped",
+          "debug": {
+            "longrepr": [
+              "i:\\PYTHON\\catester\\catester\\tests\\test_class.py",
+              251,
+              "Skipped: Success-Dependency `[1]` not satisfied"
+            ],
+            "timestamp": 1708690809.2150536
+          }
+        },
+        {
+          "name": "var3",
+          "result": "SKIPPED",
+          "resultMessage": "Test skipped",
+          "debug": {
+            "longrepr": [
+              "i:\\PYTHON\\catester\\catester\\tests\\test_class.py",
+              251,
+              "Skipped: Success-Dependency `[1]` not satisfied"
+            ],
+            "timestamp": 1708690809.2160509
+          }
+        }
+      ]
+    },
+    {
+      "type": "variable",
+      "name": "Testcollection 3",
+      "status": "COMPLETED",
+      "result": "PASSED",
+      "debug": {
+        "executionDurationStudent": 0,
+        "executionDurationReference": 0,
+        "traceback": {},
+        "lintingErrors": []
+      },
+      "duration": 0.0019948482513427734,
+      "executionDuration": 0,
+      "summary": {
+        "total": 1,
+        "success": 1,
+        "failed": 0,
+        "skipped": 0
+      },
+      "tests": [
+        {
+          "name": "var3",
+          "result": "PASSED",
+          "debug": {
+            "timestamp": 1708690809.2180457
+          }
+        }
+      ]
+    }
+  ]
+}

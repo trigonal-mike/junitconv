@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="1" failures="0" tests="8" time="0.0">
+	<testsuite disabled="0" errors="1" failures="0" name="Checks existence of file testScript1.m" skipped="0" tests="1" time="0">
+		<testcase name="existence" class="exist">
+			<error type="error" message="Not available"/>
+		</testcase>
+	</testsuite>
+	<testsuite disabled="0" errors="0" failures="0" name="Setup of an array" skipped="1" tests="1" time="0">
+		<testcase name="Setup of an array">
+			<skipped type="skipped"/>
+		</testcase>
+	</testsuite>
+	<testsuite disabled="0" errors="0" failures="0" name="Extract scalars" skipped="1" tests="1" time="0">
+		<testcase name="Extract scalars">
+			<skipped type="skipped"/>
+		</testcase>
+	</testsuite>
+	<testsuite disabled="0" errors="0" failures="0" name="Extract column vectors" skipped="1" tests="1" time="0">
+		<testcase name="Extract column vectors">
+			<skipped type="skipped"/>
+		</testcase>
+	</testsuite>
+	<testsuite disabled="0" errors="0" failures="0" name="Extract row vectors" skipped="1" tests="1" time="0">
+		<testcase name="Extract row vectors">
+			<skipped type="skipped"/>
+		</testcase>
+	</testsuite>
+	<testsuite disabled="0" errors="0" failures="0" name="Extract non-singular arrays" skipped="1" tests="1" time="0">
+		<testcase name="Extract non-singular arrays">
+			<skipped type="skipped"/>
+		</testcase>
+	</testsuite>
+	<testsuite disabled="0" errors="0" failures="0" name="Structural test" skipped="1" tests="1" time="0">
+		<testcase name="Structural test">
+			<skipped type="skipped"/>
+		</testcase>
+	</testsuite>
+	<testsuite disabled="0" errors="0" failures="0" name="Linting test" skipped="1" tests="1" time="0">
+		<testcase name="Linting test">
+			<skipped type="skipped"/>
+		</testcase>
+	</testsuite>
+</testsuites>

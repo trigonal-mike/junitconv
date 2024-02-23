@@ -1,3 +1,4 @@
+import glob
 import os
 from junitconv import run_convert
 
@@ -5,13 +6,16 @@ from junitconv import run_convert
 # facilitates starting local test-examples
 
 def start_tests():
-    input_file = "../reports/testSummary.json"
-    output_file = "../reports/testSummary-junit.xml"
+    scan_dir = "../reports"
 
     dir = os.path.abspath(os.path.dirname(__file__))
-    in_file = os.path.join(dir, input_file)
-    out_file = os.path.join(dir, output_file)
-    run_convert(in_file, out_file)
+    scan_dir = os.path.join(dir, scan_dir)
+    flist = glob.glob("*.json", root_dir=scan_dir)
+    for file in flist:
+        root, ext = os.path.splitext(file)
+        in_file = os.path.join(scan_dir, file)
+        out_file = os.path.join(scan_dir, f"{root}.xml")
+        run_convert(in_file, out_file)
 
 if __name__ == "__main__":
     start_tests()

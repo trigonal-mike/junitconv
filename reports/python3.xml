@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="1" failures="0" tests="5" time="0.0">
+	<testsuite disabled="0" errors="1" failures="0" name="Testcollection 1" skipped="0" tests="3" time="0">
+		<testcase name="var1" class="variable"/>
+		<testcase name="var2" class="variable"/>
+		<testcase name="var3" class="variable">
+			<error type="error" message="E   AssertionError: Variable `var3` has incorrect value (`3` instead of `3333`)
+    assert 3 == 3333 ± 3.3e-12
+      comparison failed
+      Obtained: 3
+      Expected: 3333 ± 3.3e-12"/>
+		</testcase>
+	</testsuite>
+	<testsuite disabled="0" errors="0" failures="0" name="Testcollection 2" skipped="1" tests="1" time="0">
+		<testcase name="Testcollection 2">
+			<skipped type="skipped"/>
+		</testcase>
+	</testsuite>
+	<testsuite disabled="0" errors="0" failures="0" name="Testcollection 3" skipped="0" tests="1" time="0">
+		<testcase name="var3" class="variable"/>
+	</testsuite>
+</testsuites>
