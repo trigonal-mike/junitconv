@@ -1,0 +1,154 @@
+{
+  "type": "MATLAB",
+  "version": "2.0",
+  "timeStamp": "2024-01-30 05:26:12",
+  "name": "Slicing of arrays with help of indices",
+  "description": "CodeAbility TestSuite",
+  "result": "FAILED",
+  "summary": {
+    "total": 8,
+    "succeeded": 3,
+    "failed": 1,
+    "skipped": 4
+  },
+  "resultMessage": "Some or all tests failed",
+  "duration": 0.749768539,
+  "environment": {
+    "version": "23.2.0.2391609 (R2023b) Update 2",
+    "computer": "MACI64"
+  },
+  "tests": [
+    {
+      "type": "exist",
+      "name": "Checks existence of file testScript1.m",
+      "result": "PASSED",
+      "summary": {
+        "total": 1,
+        "succeeded": 1,
+        "failed": 0,
+        "skipped": 0
+      },
+      "duration": 0.001892868,
+      "tests": [
+        {
+          "type": "exist",
+          "name": "existence",
+          "result": "PASSED",
+          "resultMessage": "File testScript1.msuccessfully found"
+        }
+      ]
+    },
+    {
+      "type": "variable",
+      "name": "Setup of an array",
+      "result": "FAILED",
+      "summary": {
+        "total": 2,
+        "succeeded": 0,
+        "failed": 2,
+        "skipped": 0
+      },
+      "resultMessage": "run testScript1;: File: testScript1.m Line: 12 Column: 12\nInvalid expression. When calling a function or indexing a variable, use parentheses. Otherwise, check for mismatched delimiters.",
+      "duration": 0.28381698499999997,
+      "executionDuration": 0.022528066,
+      "tests": [
+        {
+          "type": "variable",
+          "name": "num",
+          "result": "FAILED",
+          "resultMessage": "num can not be evaluated:\nUnrecognized field name \"num\"."
+        },
+        {
+          "type": "variable",
+          "name": "M",
+          "result": "FAILED",
+          "resultMessage": "M can not be evaluated:\nUnrecognized field name \"M\"."
+        }
+      ]
+    },
+    {
+      "type": "variable",
+      "name": "Extract scalars",
+      "result": "SKIPPED",
+      "duration": 1.8596E-5
+    },
+    {
+      "type": "variable",
+      "name": "Extract column vectors",
+      "result": "SKIPPED",
+      "duration": 1.5152999999999999E-5
+    },
+    {
+      "type": "variable",
+      "name": "Extract row vectors",
+      "result": "SKIPPED",
+      "duration": 9.188E-6
+    },
+    {
+      "type": "variable",
+      "name": "Extract non-singular arrays",
+      "result": "SKIPPED",
+      "duration": 8.237E-6
+    },
+    {
+      "type": "structural",
+      "name": "Structural test",
+      "result": "PASSED",
+      "summary": {
+        "total": 1,
+        "succeeded": 1,
+        "failed": 0,
+        "skipped": 0
+      },
+      "resultMessage": "File: testScript1.m\nAll requirements are fulfilled",
+      "duration": 0.012569582,
+      "tests": [
+        {
+          "type": "structural",
+          "name": "num",
+          "result": "PASSED",
+          "resultMessage": "Number of occurancies of num equal to 2 is within range [2 2]"
+        }
+      ]
+    },
+    {
+      "type": "linting",
+      "name": "Linting test",
+      "result": "PASSED",
+      "summary": {
+        "total": 4,
+        "succeeded": 4,
+        "failed": 0,
+        "skipped": 0
+      },
+      "resultMessage": "There are additional reports:\n\nNOPAR\nerror: \nA '(' might be missing a closing ')', causing invalid syntax at ';'.\nStart index of affected lines: 12\nEnd   index of affected lines: 12\n\n",
+      "duration": 0.171556711,
+      "tests": [
+        {
+          "type": "linting",
+          "name": "NOPTS",
+          "result": "PASSED",
+          "resultMessage": "Number of occurancies of NOPTS equal to 0 is within range [0 0]\nMeaning of NOPTS is not available "
+        },
+        {
+          "type": "linting",
+          "name": "NOPRT",
+          "result": "PASSED",
+          "resultMessage": "Number of occurancies of NOPRT equal to 0 is within range [0 0]\nMeaning of NOPRT is not available "
+        },
+        {
+          "type": "linting",
+          "name": "NOSEMI",
+          "result": "PASSED",
+          "resultMessage": "Number of occurancies of NOSEMI equal to 0 is within range [0 0]\nMeaning of NOSEMI is not available "
+        },
+        {
+          "type": "linting",
+          "name": "NOCOMMA",
+          "result": "PASSED",
+          "resultMessage": "Number of occurancies of NOCOMMA equal to 0 is within range [0 0]\nMeaning of NOCOMMA is not available "
+        }
+      ]
+    }
+  ]
+}

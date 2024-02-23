@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="2" failures="0" tests="12" time="0.0">
+	<testsuite disabled="0" errors="0" failures="0" name="Checks existence of file testScript1.m" skipped="0" tests="1" time="0">
+		<testcase name="existence" class="exist"/>
+	</testsuite>
+	<testsuite disabled="0" errors="2" failures="0" name="Setup of an array" skipped="0" tests="2" time="0">
+		<testcase name="num" class="variable">
+			<error type="error" message="num can not be evaluated:
+Unrecognized field name &quot;num&quot;."/>
+		</testcase>
+		<testcase name="M" class="variable">
+			<error type="error" message="M can not be evaluated:
+Unrecognized field name &quot;M&quot;."/>
+		</testcase>
+	</testsuite>
+	<testsuite disabled="0" errors="0" failures="0" name="Extract scalars" skipped="1" tests="1" time="0">
+		<testcase name="Extract scalars">
+			<skipped type="skipped"/>
+		</testcase>
+	</testsuite>
+	<testsuite disabled="0" errors="0" failures="0" name="Extract column vectors" skipped="1" tests="1" time="0">
+		<testcase name="Extract column vectors">
+			<skipped type="skipped"/>
+		</testcase>
+	</testsuite>
+	<testsuite disabled="0" errors="0" failures="0" name="Extract row vectors" skipped="1" tests="1" time="0">
+		<testcase name="Extract row vectors">
+			<skipped type="skipped"/>
+		</testcase>
+	</testsuite>
+	<testsuite disabled="0" errors="0" failures="0" name="Extract non-singular arrays" skipped="1" tests="1" time="0">
+		<testcase name="Extract non-singular arrays">
+			<skipped type="skipped"/>
+		</testcase>
+	</testsuite>
+	<testsuite disabled="0" errors="0" failures="0" name="Structural test" skipped="0" tests="1" time="0">
+		<testcase name="num" class="structural"/>
+	</testsuite>
+	<testsuite disabled="0" errors="0" failures="0" name="Linting test" skipped="0" tests="4" time="0">
+		<testcase name="NOPTS" class="linting"/>
+		<testcase name="NOPRT" class="linting"/>
+		<testcase name="NOSEMI" class="linting"/>
+		<testcase name="NOCOMMA" class="linting"/>
+	</testsuite>
+</testsuites>
