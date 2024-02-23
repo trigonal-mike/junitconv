@@ -4,16 +4,16 @@
 		<testcase name="var1" classname="variable"/>
 		<testcase name="var2" classname="variable"/>
 		<testcase name="var3" classname="variable">
-			<error type="error" message="E   AssertionError: Variable `var3` has incorrect value (`3` instead of `3333`)
+			<error type="error" message="FAILED">E   AssertionError: Variable `var3` has incorrect value (`3` instead of `3333`)
     assert 3 == 3333 ± 3.3e-12
       comparison failed
       Obtained: 3
-      Expected: 3333 ± 3.3e-12"/>
+      Expected: 3333 ± 3.3e-12</error>
 		</testcase>
 	</testsuite>
 	<testsuite disabled="0" errors="0" failures="0" name="Testcollection 2" skipped="1" tests="1" time="0">
 		<testcase name="Testcollection 2">
-			<skipped type="skipped"/>
+			<skipped type="skipped" message="SKIPPED">Tests skipped</skipped>
 		</testcase>
 	</testsuite>
 	<testsuite disabled="0" errors="0" failures="0" name="Testcollection 3" skipped="0" tests="1" time="0">

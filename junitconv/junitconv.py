@@ -1,6 +1,6 @@
 import argparse
-import os
 from convert import convert_now
+#from convert1 import convert_now
 
 DEFAULT_INPUT = "testSummary.json"
 DEFAULT_OUTPUT = "testSummary-junit.xml"

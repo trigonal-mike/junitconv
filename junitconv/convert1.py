@@ -1,6 +1,6 @@
 import json
 import os
-from junit_xml import TestSuite, TestCase, to_xml_report_string
+from junitparser import TestCase, TestSuite, JUnitXml, Skipped, Error
 
 def normalize_path(path):
     cwd = os.getcwd()
@@ -24,10 +24,11 @@ def convert_now(input_file: str, output_file: str):
     with open(input_file) as file:
         data = json.load(file)
     test_suites = dict_to_testsuites(data)
-    xml = to_xml_report_string(test_suites, prettyprint=pretty_print)
     print(f"Writing: {output_file}")
-    with open(output_file, "w", encoding="UTF-8") as file:
-        file.write(xml)
+    xml = JUnitXml()
+    for suite in test_suites:
+        xml.add_testsuite(suite)
+    xml.write(output_file, pretty=pretty_print)
 
 def dict_to_testsuites(data: dict) -> list[TestSuite]:
     def get_debug_info(data: dict) -> str:
@@ -50,10 +51,7 @@ def dict_to_testsuites(data: dict) -> list[TestSuite]:
             # subtests are not available (in winfrieds testSummary.json)
             # append only one skipped testcase
             tc = TestCase(name)
-            tc.add_skipped_info(
-                message="SKIPPED",
-                output=get_debug_info(test)
-            )
+            tc.result = [Skipped(get_debug_info(test))]
             test_cases.append(tc)
         else:
             # if result is FAILED or PASSED
@@ -64,12 +62,10 @@ def dict_to_testsuites(data: dict) -> list[TestSuite]:
                 tc = TestCase(sub_name)
                 tc.classname = type
                 if sub_result == "FAILED":
-                    tc.add_error_info(
-                        message="FAILED",
-                        output=get_debug_info(subtest)
-                    )
+                    tc.result = [Error(get_debug_info(subtest))]
                 test_cases.append(tc)
         ts = TestSuite(name)
-        ts.test_cases = test_cases
+        for case in test_cases:
+            ts.add_testcase(case)
         test_suites.append(ts)
     return test_suites

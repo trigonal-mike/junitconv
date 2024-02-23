@@ -5,32 +5,32 @@
 	</testsuite>
 	<testsuite disabled="0" errors="2" failures="0" name="Setup of an array" skipped="0" tests="2" time="0">
 		<testcase name="num" classname="variable">
-			<error type="error" message="num can not be evaluated:
-Unrecognized field name &quot;num&quot;."/>
+			<error type="error" message="FAILED">num can not be evaluated:
+Unrecognized field name &quot;num&quot;.</error>
 		</testcase>
 		<testcase name="M" classname="variable">
-			<error type="error" message="M can not be evaluated:
-Unrecognized field name &quot;M&quot;."/>
+			<error type="error" message="FAILED">M can not be evaluated:
+Unrecognized field name &quot;M&quot;.</error>
 		</testcase>
 	</testsuite>
 	<testsuite disabled="0" errors="0" failures="0" name="Extract scalars" skipped="1" tests="1" time="0">
 		<testcase name="Extract scalars">
-			<skipped type="skipped"/>
+			<skipped type="skipped" message="SKIPPED">Not available</skipped>
 		</testcase>
 	</testsuite>
 	<testsuite disabled="0" errors="0" failures="0" name="Extract column vectors" skipped="1" tests="1" time="0">
 		<testcase name="Extract column vectors">
-			<skipped type="skipped"/>
+			<skipped type="skipped" message="SKIPPED">Not available</skipped>
 		</testcase>
 	</testsuite>
 	<testsuite disabled="0" errors="0" failures="0" name="Extract row vectors" skipped="1" tests="1" time="0">
 		<testcase name="Extract row vectors">
-			<skipped type="skipped"/>
+			<skipped type="skipped" message="SKIPPED">Not available</skipped>
 		</testcase>
 	</testsuite>
 	<testsuite disabled="0" errors="0" failures="0" name="Extract non-singular arrays" skipped="1" tests="1" time="0">
 		<testcase name="Extract non-singular arrays">
-			<skipped type="skipped"/>
+			<skipped type="skipped" message="SKIPPED">Not available</skipped>
 		</testcase>
 	</testsuite>
 	<testsuite disabled="0" errors="0" failures="0" name="Structural test" skipped="0" tests="1" time="0">
