@@ -7,10 +7,11 @@ from junitconv import run_convert
 
 def start_tests():
     scan_dir = "../reports"
+    scan_dir = "../../tests"
 
     dir = os.path.abspath(os.path.dirname(__file__))
     scan_dir = os.path.join(dir, scan_dir)
-    flist = glob.glob("*.json", root_dir=scan_dir)
+    flist = glob.glob("**/*.json", root_dir=scan_dir, recursive=True)
     for file in flist:
         root, ext = os.path.splitext(file)
         in_file = os.path.join(scan_dir, file)

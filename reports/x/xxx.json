@@ -1,0 +1,83 @@
+{
+  "type": "MATLAB",
+  "version": "2.0",
+  "timeStamp": "2024-01-30 05:26:08",
+  "name": "Slicing of arrays with help of indices",
+  "description": "CodeAbility TestSuite",
+  "result": "FAILED",
+  "summary": {
+    "total": 8,
+    "succeeded": 0,
+    "failed": 1,
+    "skipped": 7
+  },
+  "resultMessage": "Some or all tests failed",
+  "duration": 0.315064175,
+  "environment": {
+    "version": "23.2.0.2391609 (R2023b) Update 2",
+    "computer": "MACI64"
+  },
+  "tests": [
+    {
+      "type": "exist",
+      "name": "Checks existence of file testScript1.m",
+      "result": "FAILED",
+      "summary": {
+        "total": 1,
+        "succeeded": 0,
+        "failed": 1,
+        "skipped": 0
+      },
+      "duration": 0.005055501,
+      "tests": [
+        {
+          "type": "exist",
+          "name": "existence",
+          "result": "FAILED"
+        }
+      ]
+    },
+    {
+      "type": "variable",
+      "name": "Setup of an array",
+      "result": "SKIPPED",
+      "duration": 1.5888E-5
+    },
+    {
+      "type": "variable",
+      "name": "Extract scalars",
+      "result": "SKIPPED",
+      "duration": 1.4867E-5
+    },
+    {
+      "type": "variable",
+      "name": "Extract column vectors",
+      "result": "SKIPPED",
+      "duration": 1.1558E-5
+    },
+    {
+      "type": "variable",
+      "name": "Extract row vectors",
+      "result": "SKIPPED",
+      "duration": 1.3607E-5
+    },
+    {
+      "type": "variable",
+      "name": "Extract non-singular arrays",
+      "result": "SKIPPED",
+      "duration": 1.7668E-5
+    },
+    {
+      "type": "structural",
+      "name": "Structural test",
+      "result": "SKIPPED",
+      "duration": 1.0659E-5
+    },
+    {
+      "type": "linting",
+      "name": "Linting test",
+      "result": "SKIPPED",
+      "duration": 1.2622E-5
+    }
+  ]
+}
